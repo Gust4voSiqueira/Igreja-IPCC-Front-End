@@ -1,0 +1,45 @@
+div#About-container{
+    background: #212020;
+}
+
+div#About-container h2#About-title{
+    display: block;
+    margin: 15px 0% 0px 6.5%;
+}
+div#About-container section.history img{
+    width: 18%;
+}
+div#About-container section.history{
+    display: flex;
+    justify-content: space-between;
+
+    padding: 80px 6.5% 0px 6.5%;
+}
+div#About-container section.history div#text-global-history h3{
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+
+    margin-bottom: 2%;
+
+    color: #04D361;
+}
+
+
+@media (max-width: 1048px) {
+    div#About-container h2#About-title{
+        font-size: 14pt;
+        margin: 15px 0% 0px 6.5%;
+    }
+    div#About-container section.history img{
+        width: 95%;
+        display: block;
+        margin: 20px 0px;
+    } 
+    div#About-container section.history{
+        display: block;
+        padding: 20px 6.5% 0px 6.5%;
+        
+    }
+
+}

@@ -1,0 +1,55 @@
+div#EcdComponent-container {
+    background: #323131;
+    margin: 20px 30px;
+    padding: 1.7% 5%;
+  
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  
+  div#EcdComponent-container div p {
+    display: block;
+    width: 80%;
+  }
+  div#EcdComponent-container img {
+    width: 20%;
+    display: block;
+  }
+  button#button-acess-ecd {
+    padding: 10px 25px;
+    margin-top: 20px;
+    background: var(--cor-title-button);
+    border-radius: 5px;
+  }
+  button#button-acess-ecd:hover {
+    cursor: pointer;
+    background: #04aa4f;
+  }
+  @media (max-width: 1048px) {
+    div#EcdComponent-container {
+      margin: 20px 10px;
+      border-radius: 5px;
+    }
+    div#EcdComponent-container div h2 {
+      width: 150%;
+    }
+    div#EcdComponent-container div p {
+      width: 100%;
+      display: block;
+      font-size: 8.5pt;
+    }
+    div#EcdComponent-container img {
+      display: block;
+      height: 70%;
+      width: 30%;
+      margin: auto;
+    }
+    button#button-acess-ecd {
+      padding: 8px 12px;
+      font-size: 8.5pt;
+    }
+  
+  
+  }
+  

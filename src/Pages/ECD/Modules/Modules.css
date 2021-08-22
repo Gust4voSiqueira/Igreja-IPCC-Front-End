@@ -1,0 +1,34 @@
+section.section-models {
+    display: flex;
+    justify-content: space-between;
+  }
+  section.section-models img {
+    width: 10%;
+    margin-right: 10px;
+  }
+  div.models{
+    background: #323131;
+    margin: 20px 30px;
+    padding: 1.7% 1%;
+  }
+  div.models h2{
+    padding: 0px 3%;
+  }
+
+  @media (max-width: 1048px) {
+    section.section-models img {
+      width: 40%;
+      margin: 10px;
+    }  section.section-models {
+      display: block;
+    }
+    div.module {
+      display: block;
+      width: 100%;
+      margin: 10px;
+      padding: 18px 10px;
+    }
+    div#module-container {
+      display: block;
+    }
+  }

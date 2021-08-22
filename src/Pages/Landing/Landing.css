@@ -1,0 +1,32 @@
+div#landing-container {
+    background: #212020;
+  }
+  
+  nav#slider img.selected{
+    opacity: 1;
+  }
+  nav#slider img{
+    position: absolute;
+    opacity: 0;
+  }
+  nav#slider li{
+    list-style: none;
+  }
+  img#images-landing{
+    display: block;
+    height: 60%;
+    width: 95.5%;
+  
+    margin: 10px auto;
+    border-radius: 5px;
+  }
+  @media (max-width: 1048px) {
+    div#landing-container h2#message-end {
+      display: block;
+      align-items: center;
+      text-align: center;
+      justify-content: center;
+    
+      margin: 10px 0px;
+    }
+  }

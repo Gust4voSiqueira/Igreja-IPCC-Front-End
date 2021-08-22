@@ -1,0 +1,57 @@
+div#dailyverse-container {
+    background: #323131;
+    margin: 0px 30px;
+    padding: 1.7% 5%;
+  
+    display: flex;
+    justify-content: space-between;
+  }
+  div#dailyverse-container img {
+    width: 10%;
+    display: block;
+  }
+  div#dailyverse-container div h2 {
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+  }
+  div#dailyverse-container div {
+    margin: auto;
+    padding: 0% 10%;
+  }
+  div#dailyverse-container div p {
+    display: block;
+  }
+  div#dailyverse-container div span {
+    display: block;
+    margin-top: 5px;
+    align-items: right;
+    text-align: right;
+    justify-content: right;
+  }
+  
+  @media (max-width: 1048px) {
+    div#dailyverse-container {
+      margin: 0px 10px;
+      border-radius: 5px;
+    }
+    div#dailyverse-container img {
+      width: 30%;
+      height: 10%;
+      display: block;
+      margin: auto;
+    }
+    div#dailyverse-container div {
+      display: block;
+    }
+    div#dailyverse-container div p {
+      display: block;
+      font-size: 8.5pt;
+      align-items: center;
+      text-align: center;
+    }
+    div#dailyverse-container div span {
+      font-size: 9.5pt;
+    }
+  }
+  

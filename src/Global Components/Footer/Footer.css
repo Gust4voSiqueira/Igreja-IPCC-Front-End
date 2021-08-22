@@ -1,0 +1,51 @@
+div#footer-container {
+    background: #000;
+  
+    display: flex;
+    justify-content: space-between;
+  
+    padding: 15px 25px;
+  }
+  h2#message-end {
+    display: block;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+  
+    margin: 40px auto;
+  }
+  div#footer-container img {
+    width: 10%;
+    height: 20%;
+  }
+  div#footer-container div textarea {
+    color: black;
+    padding: 5px;
+    display: block;
+  }
+  button#button-suggestion {
+    padding: 10px 25px;
+    margin-top: 5px;
+    background: #04d361;
+    border-radius: 5px;
+    display: inline-block;
+  }
+  button#button-suggestion:hover {
+    cursor: pointer;
+    background: #04aa4f;
+  }
+  
+  
+  @media (max-width: 1048px) {
+    div#footer-container img {
+      display: none;
+    }
+    div#footer-container div textarea {
+      width: 90%;
+    }
+    button#button-suggestion {
+      padding: 8px 12px;
+      font-size: 8.5pt;
+    }
+  }
+  

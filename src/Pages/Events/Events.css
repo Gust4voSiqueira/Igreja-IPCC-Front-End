@@ -1,0 +1,15 @@
+div#events-container{
+    background: #212020;
+}
+div#events-container h2{
+        display: block;
+        margin: 15px 0% 15px 6.5%;
+      
+}
+
+
+@media (max-width: 1048px) {
+    div#events-container h2{
+        font-size: 14pt;
+    }
+}

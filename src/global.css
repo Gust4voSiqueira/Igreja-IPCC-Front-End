@@ -1,0 +1,29 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+
+    color: white;
+    font-family: Poppins;
+
+    scroll-behavior: smooth;
+}
+body{
+    background: #212020;
+   }
+:root{
+    --cor-title-button: #04d361;
+}
+.title{
+    display: block;
+    margin-bottom: 18px;
+    color: var(--cor-title-button);
+}
+@media (max-width: 1048px) {
+    .title{
+        font-size: 12pt;
+        margin-bottom: 5px;
+    }
+   
+}
