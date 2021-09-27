@@ -38,6 +38,61 @@ div#header-container {
     display: none;
   }
   @media (max-width: 1048px) {
+    #menu-mobile label{
+      position: absolute;
+      transition: all 0.3s linear;
+  }
+  span#main-mobile-barra{
+      width: 32px;
+      height: 2px;
+      top: 65px;
+      left: 14px;
+      position: absolute;
+      background-color: white;
+  }
+  span#main-mobile-barra::before{
+      content: '';
+      width: 32px;
+      height: 2px;
+      bottom: -13px;
+      position: absolute;
+      background-color: #fff;
+
+      transition: all 0.3s linear;
+  }
+  span#main-mobile-barra::after{
+      content: '';
+      width: 32px;
+      height: 2px;
+      top: -13px;
+      position: absolute;
+      background-color: #fff;
+
+      transition: all 0.3s linear;
+  }
+  #check{
+    top: 20px;
+    width: 7.5%;
+      position: absolute;
+      z-index: 1;
+      margin: auto; 
+      height: 90px;
+      opacity: 0;
+  }
+  #check:checked ~ span {
+      background-color: transparent;
+  }
+  #check:checked ~ span::after {
+      transform: translate(0px, 13px) rotate(45deg);
+  }
+
+  #check:checked ~ span::before {
+      transform: translate(0px, -13px) rotate(-45deg);
+  }
+
+  #check:checked ~ span#span-animation::after{
+     content: '';
+  }
     div#header-container {
       padding: 13% 3%;
     }
