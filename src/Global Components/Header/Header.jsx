@@ -1,28 +1,13 @@
-import React, { useCallback, useState } from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import "./Header.css";
 
 import Logo from "../../images/logo.jpeg";
 
-import MenuIcon from '@material-ui/icons/Menu';
 
 const Header = () => {
     const [main, setMain] = useState(false);
-    const handleMainDesktop = useCallback(() => {
-        if (main === false) {
-            document.getElementById("nav-mobile").style.left = "-0%";
-            if (window.location.href === "http://localhost:3000/Location") {
-                document.getElementById("map-location").style.display = "none";
-                document.getElementById("image").style.display = "block";
-            }
-        } else {
-            if (window.location.href === "http://localhost:3000/Location") {
-                document.getElementById("map-location").style.display = "block";
-                document.getElementById("image").style.display = "none";
-            }
-            document.getElementById("nav-mobile").style.left = "-50%";
-        }
-    }, [main]);
+    
     return (
         <>
             <div id="header-container">
@@ -33,7 +18,7 @@ const Header = () => {
                     <label htmlFor="check"></label>
                     <span id='main-mobile-barra'></span>
             </div>
-            
+
                 <div id="title-nav">
                     <h1>Mais que uma Igreja, uma Família!</h1>
 
