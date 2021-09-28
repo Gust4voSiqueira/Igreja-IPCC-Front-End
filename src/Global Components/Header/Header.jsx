@@ -1,20 +1,27 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import "./Header.css";
 
 import Logo from "../../images/logo.jpeg";
 
-
 const Header = () => {
     const [main, setMain] = useState(false);
-    
+    useEffect(() => {
+        if(main){
+            document.getElementById("nav-mobile").style.left = "0"
+        }else{
+            document.getElementById("nav-mobile").style.left = "-50%"
+        }
+    }, [main])
     return (
         <>
             <div id="header-container">
                 <img src={Logo} alt="Logo" />
 
-                <div id="menu-mobile" onClick={() => setMain(!main)}>
-                    <input type="checkbox" name="" id="check" />
+                <div id="menu-mobile">
+                    <input type="checkbox"  onClick={() => {
+                        setMain(!main)
+                    }} name="" id="check" />
                     <label htmlFor="check"></label>
                     <span id='main-mobile-barra'></span>
             </div>

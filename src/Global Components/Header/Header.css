@@ -5,6 +5,9 @@ div#header-container {
     display: flex;
     justify-content: space-between;
   }
+  #check{
+    display: none;
+  }
   div#header-container img {
     width: 30%;
   }
@@ -71,8 +74,9 @@ div#header-container {
       transition: all 0.3s linear;
   }
   #check{
-    top: 20px;
-    width: 7.5%;
+      display: block;
+      top: 20px;
+      width: 7.5%;
       position: absolute;
       z-index: 1;
       margin: auto; 
@@ -94,6 +98,7 @@ div#header-container {
      content: '';
   }
     div#header-container {
+ 
       padding: 13% 3%;
     }
     nav#nav-desktop {
